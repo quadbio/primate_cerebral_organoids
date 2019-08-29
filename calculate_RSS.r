@@ -17,9 +17,9 @@ retrieveABARef <- function(sampleSet = c("full","fetal","fetal_before10pcw","fet
 	
 	sampleSet <- match.arg(sampleSet)
 	geneSet <- match.arg(geneSet)
-	load("data/rows_ABA.rda")
-	load("data/columns_ABA.rda")
-	load("data/expr_ABA.rda")
+	load("extdata/rows_ABA.rda")
+	load("extdata/columns_ABA.rda")
+	load("extdata/expr_ABA.rda")
 	
 	if (sampleSet == "full"){
 		idxCol <- 1:ncol(expr_ABA)
