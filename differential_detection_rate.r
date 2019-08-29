@@ -1,4 +1,5 @@
 # function to subsample cells/nuclei by control subtype heterogeneity and cell number differences among species
+# used in adult expression comparison between human and chimp
 sample_cells_ctrl_hetero <- function(species, cl, cl_annot, cts_to_sample = unique(cl_annot), num_cells_per_ct = 200){
 	res <- setNames(lapply(cts_to_sample, function(ct){
 		cl_ct <- names(cl_annot)[which(cl_annot == ct)]
@@ -15,6 +16,7 @@ sample_cells_ctrl_hetero <- function(species, cl, cl_annot, cts_to_sample = uniq
 }
 
 # function to test for difference of gene detection rates between two groups
+# used in organoid chromatin accessibility comparison and adult expression comparison between human and chimp
 differential_detection_rate_test <- function(expr1, expr2, genes2test = intersect(rownames(expr1), rownames(expr2)), num_threads = 1){
 	require(doParallel)
 	expr1 <- expr1[intersect(rownames(expr1), rownames(expr2)),]

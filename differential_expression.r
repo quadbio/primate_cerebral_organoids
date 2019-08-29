@@ -1,4 +1,5 @@
 # function to get cells indices by random sampling with line number restricted and cell distribution along pseudotime controlled
+# used in human-chimp organoid DE robustness estimation
 sampling_ctrl_lines_pt <- function(lines, pt, pt_ref, num_lines, line_candidates = unique(lines), num_breaks_pt = 10){
 	num_cells_int <- table(ceiling(pt_ref / max(c(pt,pt_ref)) * num_breaks_pt))
 	lines_to_use <- sample(lines, min(c(num_lines, length(unique(lines)))))
@@ -14,6 +15,7 @@ sampling_ctrl_lines_pt <- function(lines, pt, pt_ref, num_lines, line_candidates
 }
 
 # function to do DE along the aligned pseudotime trajectory
+# used in human-chimp organoid DE analysis
 DE_ftest_pt <- function(expr1, pt1, expr2, pt2, degree = 6, num_breaks_gdiff = 10, num_threads = 1){
 	require(doParallel)
 	require(splines)
