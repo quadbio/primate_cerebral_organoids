@@ -34,7 +34,7 @@ DE_ftest_pt <- function(expr1, pt1, expr2, pt2, degree = 6, num_breaks_gdiff = 1
 		
 		e <- c(e1, e2)
 		m0 <- lm(e ~ ns(pt, df = degree))
-		m1 <- lm(e ~ g * ns(pt, degree = 6))
+		m1 <- lm(e ~ g * ns(pt, degree = degree))
 		f <- anova(m1)$"Mean Sq"[4] / anova(m0)$"Mean Sq"[2]
 		p <- pf(f, m1$df, m0$df, lower.tail=T)
 
