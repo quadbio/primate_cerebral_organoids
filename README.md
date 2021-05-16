@@ -41,7 +41,7 @@ Reusable scripts and functions archive for the paper "Organoid single-cell genom
  * The data is also browsable in [NeMO](https://nemoanalytics.org//index.html?share_id=37fd35aa&gene_symbol_exact_match=1)
 
 ## Related publication
-The 10x Genomics based scRNA-seq data of human cerebral organoids in this work was reprocessed with CSS (Cluster Similarity Spectrum) in [He et al. 2020 Genome Biol](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02147-4).
+The 10x Genomics based scRNA-seq data of human cerebral organoids in this work was reprocessed with CSS (Cluster Similarity Spectrum, https://github.com/quadbiolab/simspec) in [He et al. 2020 Genome Biol](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02147-4), which is also available in [biorxiv](https://www.biorxiv.org/content/10.1101/2020.02.27.968560v2).
 
 ## Contact
 If you have any question related to the data and the analysis, please contact Dr. Zhisong He (zhisong.he(at)bsse.ethz.ch), Prof. Barbara Treutlein (barbara.treutlein(at)bsse.ethz.ch), Prof. J. Gray Camp (grayson.camp(at)iob.ch)
