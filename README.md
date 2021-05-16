@@ -3,6 +3,11 @@ Reusable scripts and functions archive for the paper "Organoid single-cell genom
 
 ## File description:
  * ```extdata```: the BrainSpan RNA-seq data
+ * ```scATAC_analysis```: the scripts for preprocessing and analyzing the scATAC-seq data
+   * ```scATAC_1_processing_singlecells.sh```: the BASH commands to process the scATAC-seq data, including mapping, peak calling, liftover between species, etc.
+   * ```scATAC_2_merge_singleCells.sh```: the BASH commands to merge scATAC-seq of all cells, and do peak calling based on the merged data
+   * ```scATAC_3_merge_species.sh```: the BASH commands to create a single count matrix for scATAC-seq data from species mapped to different genomes
+   * ```scATAC_analysis.R```: script to analyze scATAC-seq data in R
  * ```calculateRSS.r```: functions related to RSS (Reference Similarity Spectrum) calculation, including:
    * ```retrieveABARef```: retrieve the BrainSpan reference. It requires the extdata folder to be available
    * ```calculateRSS```: calculate RSS matrix given the input expression and reference expression matrices
