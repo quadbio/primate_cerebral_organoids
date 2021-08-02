@@ -37,7 +37,7 @@ Reusable scripts and functions archive for the paper "Organoid single-cell genom
    * [E-MTAB-8230](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-8230/): snRNA-seq data of the adult brain samples
    * [E-MTAB-8231](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-8231/): bulk RNA-seq data of the adult brain samples
  * The processed scRNA-seq data is available in Mendeley Data: https://data.mendeley.com/datasets/z4jyxnx3vp/2
- * The data is available for exploration in [scApeX](https://bioinf.eva.mpg.de/shiny/sample-apps/scApeX/)
+ * The data is available for exploration in [scApeX](https://bioinf.eva.mpg.de/shiny/sample-apps/scApeX/). If there is any issue accessing the app, please try the [mirror](https://scapex.ethz.ch).
  * The data is also browsable in [NeMO](https://nemoanalytics.org//index.html?share_id=37fd35aa&gene_symbol_exact_match=1)
 
 ## Related publication
